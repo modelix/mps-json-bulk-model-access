@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.rest.model.access.mps.plugin.build/org.modelix.mps.rest.model.access.mps.plugin.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.rest.model.acess.mps.plugin/org.modelix.mps.rest.model.acess.mps.plugin.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
