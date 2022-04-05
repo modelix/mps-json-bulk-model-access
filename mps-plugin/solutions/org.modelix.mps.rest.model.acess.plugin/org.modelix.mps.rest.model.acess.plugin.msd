@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.modelix.mps.rest.model.acess.mps.plugin" uuid="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="org.modelix.mps.rest.model.acess.plugin" uuid="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -57,7 +57,7 @@
     <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="306183fb-952a-4095-9ca0-a4b846e2036e(org.modelix.modelcheck.mps.plugin)" version="0" />
-    <module reference="3257c0a0-131a-49aa-b7eb-4ec72ed06b33(org.modelix.mps.rest.model.acess.mps.plugin)" version="0" />
+    <module reference="3257c0a0-131a-49aa-b7eb-4ec72ed06b33(org.modelix.mps.rest.model.acess.plugin)" version="0" />
   </dependencyVersions>
 </solution>
 

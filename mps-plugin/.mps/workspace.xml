@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1a96db9-fc42-4941-9239-7f1a28bfd50c" name="Default Changelist" comment="" />
+    <list default="true" id="e1a96db9-fc42-4941-9239-7f1a28bfd50c" name="Default Changelist" comment="">
+      <change beforePath="$enabler.home$/code/arche-web/devstack-authproxy/build.gradle" beforeDir="false" afterPath="$enabler.home$/code/arche-web/devstack-authproxy/build.gradle" afterDir="false" />
+      <change beforePath="$enabler.home$/code/arche-web/modelix/kubernetes/common/proxy.yaml" beforeDir="false" afterPath="$enabler.home$/code/arche-web/modelix/kubernetes/common/proxy.yaml" afterDir="false" />
+      <change beforePath="$enabler.home$/code/arche-web/repo-overview/src/main/kotlin/com/cso/enabler/Kubernetes.kt" beforeDir="false" afterPath="$enabler.home$/code/arche-web/repo-overview/src/main/kotlin/com/cso/enabler/Kubernetes.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +25,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="5adabcca-1a48-465e-975c-56ff8a8c9d40/r:1ad603b3-2d23-44f1-bc48-62feff5940b9(TempModule5adabcca-1a48-465e-975c-56ff8a8c9d40/ConsoleModel_92780394424470)">
+            <model ref="ec960f46-0bf3-454e-9465-cf99e2909640/r:47eaee71-87ba-4a3a-90d4-a3651d9cf56c(TempModuleec960f46-0bf3-454e-9465-cf99e2909640/ConsoleModel_132631684127023)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -41,11 +45,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="2s2bSrjLy_v">
-                <node concept="3balQm" id="2s2bSrjLy_w" role="aymYE" />
-                <node concept="2Clz$F" id="2s2bSrjLy_x" role="aymYO" />
-                <node concept="2_V_lH" id="2s2bSrjLy_y" role="1PhJh3">
-                  <ref role="2_V_lI" node="2s2bSrjLy_x" resolve="CommandHolder" />
+              <node concept="aymSD" id="1nt204NXBiT">
+                <node concept="3balQm" id="1nt204NXBiU" role="aymYE" />
+                <node concept="2Clz$F" id="1nt204NXBiV" role="aymYO" />
+                <node concept="2_V_lH" id="1nt204NXBiW" role="1PhJh3">
+                  <ref role="2_V_lI" node="1nt204NXBiV" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -95,6 +99,7 @@
       </MessageListState>
     </option>
   </component>
+  <component name="ProjectId" id="27LbC1LML6wt8Rqndm7QSSXsELI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
     <option name="pluginsState">
@@ -370,37 +375,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:fc49d5a3-c459-4089-b0b6-a40402d62ee5(org.modelix.mps-rest-model-acess.mps-plugin.build) in IdeaFile[path: /Users/silveira/Repositories/mps-rest-model-access/mps-plugin/solutions/org.modelix.mps.rest.model.access.mps.plugin.build/models/org.modelix.mps-rest-model-acess.mps-plugin.build.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,6 +416,22 @@
               <option name="myItemId" value="mps-plugin" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
               <option name="myItemType" value="" />
@@ -456,7 +447,21 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
+              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:fc49d5a3-c459-4089-b0b6-a40402d62ee5(org.modelix.mps-rest-model-acess.mps-plugin.build) in IdeaFile[path: /Users/silveira/Repositories/mps-rest-model-access/mps-plugin/solutions/org.modelix.mps.rest.model.access.mps.plugin.build/models/org.modelix.mps-rest-model-acess.mps-plugin.build.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -492,6 +497,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e1a96db9-fc42-4941-9239-7f1a28bfd50c" name="Default Changelist" comment="" />

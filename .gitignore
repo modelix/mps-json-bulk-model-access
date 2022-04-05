@@ -17,7 +17,7 @@ build
 .idea/**/shelf
 
 # MPS Plugin libraries
-/mps-plugin/solutions/org.modelix.mps.rest.model.acess.mps.plugin/lib/*
+/mps-plugin/solutions/org.modelix.mps.rest.model.acess.plugin/lib/*
 
 # Kotlin multipltform JS stuff
 /kotlin-js-store/yarn.lock

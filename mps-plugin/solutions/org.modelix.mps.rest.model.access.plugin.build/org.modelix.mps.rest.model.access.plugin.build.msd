@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.modelix.mps.rest.model.access.mps.plugin.build" uuid="449011d8-ce64-47d2-9dc9-87b407588952" moduleVersion="0" compileInMPS="true">
+<solution name="org.modelix.mps.rest.model.access.plugin.build" uuid="449011d8-ce64-47d2-9dc9-87b407588952" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -21,7 +21,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
-    <module reference="449011d8-ce64-47d2-9dc9-87b407588952(org.modelix.mps.rest.model.access.mps.plugin.build)" version="0" />
+    <module reference="449011d8-ce64-47d2-9dc9-87b407588952(org.modelix.mps.rest.model.access.plugin.build)" version="0" />
   </dependencyVersions>
 </solution>
 

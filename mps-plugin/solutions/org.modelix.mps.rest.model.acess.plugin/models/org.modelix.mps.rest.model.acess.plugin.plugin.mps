@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b61e466d-2b62-484c-a3b0-37acdf6898f0(org.modelix.mps.rest.model.acess.mps.plugin.plugin)">
+<model ref="r:b61e466d-2b62-484c-a3b0-37acdf6898f0(org.modelix.mps.rest.model.acess.plugin.plugin)">
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
