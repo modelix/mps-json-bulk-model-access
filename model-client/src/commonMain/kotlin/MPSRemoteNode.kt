@@ -44,8 +44,6 @@ class MPSRemoteNode(
         }
     }
 
-    override fun getConceptReference(): IConceptReference? = TODO("Not yet implemented")
-
     override fun addNewChild(role: String?, index: Int, concept: IConcept?): INode {
         TODO("Not yet implemented")
     }
