@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
 }
 
-group = "org.modelix.mps-rest-model-access.client"
+group = "org.modelix.mps-rest-model-access"
 version = "0.1"
 
 val ktor_version : String by project

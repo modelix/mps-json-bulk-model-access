@@ -9,7 +9,11 @@ buildscript {
     }
 }
 
-group = "org.modelix.mps-rest-model-access.mps-plugin"
+plugins {
+    `maven-publish`
+}
+
+group = "org.modelix.mps-rest-model-access"
 version = "0.1"
 
 repositories {
@@ -52,4 +56,23 @@ ext["itemis.mps.gradle.ant.defaultScriptArgs"] = listOf("-Dmps_home=${mpsDir.abs
 val build = tasks.create<de.itemis.mps.gradle.BuildLanguages>("build"){
     dependsOn(copyServer,copyDependencies,extractMps)
     script = "$projectDir/build.xml"
+}
+
+val packagePlugin = tasks.register<Zip>("packagePlugin") {
+    archiveFileName.set("mps-plugin.zip")
+    destinationDirectory.set(layout.buildDirectory.dir("dist"))
+
+    from("$buildDir/artifacts/mps-plugin")
+}
+
+
+publishing {
+    publications {
+        create<MavenPublication>("mps-plugin") {
+            artifact(packagePlugin)
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
 }
