@@ -5,6 +5,7 @@
       <change beforePath="$enabler.home$/code/arche-web/devstack-authproxy/build.gradle" beforeDir="false" afterPath="$enabler.home$/code/arche-web/devstack-authproxy/build.gradle" afterDir="false" />
       <change beforePath="$enabler.home$/code/arche-web/modelix/kubernetes/common/proxy.yaml" beforeDir="false" afterPath="$enabler.home$/code/arche-web/modelix/kubernetes/common/proxy.yaml" afterDir="false" />
       <change beforePath="$enabler.home$/code/arche-web/repo-overview/src/main/kotlin/com/cso/enabler/Kubernetes.kt" beforeDir="false" afterPath="$enabler.home$/code/arche-web/repo-overview/src/main/kotlin/com/cso/enabler/Kubernetes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="ec960f46-0bf3-454e-9465-cf99e2909640/r:47eaee71-87ba-4a3a-90d4-a3651d9cf56c(TempModuleec960f46-0bf3-454e-9465-cf99e2909640/ConsoleModel_132631684127023)">
+            <model ref="10d50670-04ec-41c2-a213-5087fe4744e2/r:fa4b82de-bc7d-4b8c-ba4f-0978b77aac5d(TempModule10d50670-04ec-41c2-a213-5087fe4744e2/ConsoleModel_153284635674541)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -45,11 +46,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1nt204NXBiT">
-                <node concept="3balQm" id="1nt204NXBiU" role="aymYE" />
-                <node concept="2Clz$F" id="1nt204NXBiV" role="aymYO" />
-                <node concept="2_V_lH" id="1nt204NXBiW" role="1PhJh3">
-                  <ref role="2_V_lI" node="1nt204NXBiV" resolve="CommandHolder" />
+              <node concept="aymSD" id="59hwiybiUxx">
+                <node concept="3balQm" id="59hwiybiUxy" role="aymYE" />
+                <node concept="2Clz$F" id="59hwiybiUxz" role="aymYO" />
+                <node concept="2_V_lH" id="59hwiybiUx$" role="1PhJh3">
+                  <ref role="2_V_lI" node="59hwiybiUxz" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -367,101 +368,102 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:b61e466d-2b62-484c-a3b0-37acdf6898f0(org.modelix.mps.rest.model.acess.mps.plugin.plugin) in IdeaFile[path: /Users/silveira/Repositories/mps-rest-model-access/mps-plugin/solutions/org.modelix.mps.rest.model.acess.mps.plugin/models/org.modelix.mps.rest.model.acess.mps.plugin.plugin.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:fc49d5a3-c459-4089-b0b6-a40402d62ee5(org.modelix.mps-rest-model-acess.mps-plugin.build) in IdeaFile[path: /Users/silveira/Repositories/mps-rest-model-access/mps-plugin/solutions/org.modelix.mps.rest.model.access.mps.plugin.build/models/org.modelix.mps-rest-model-acess.mps-plugin.build.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:fc49d5a3-c459-4089-b0b6-a40402d62ee5(org.modelix.mps-rest-model-acess.mps-plugin.build) in IdeaFile[path: /Users/silveira/Repositories/mps-rest-model-access/mps-plugin/solutions/org.modelix.mps.rest.model.access.plugin.build/models/org.modelix.mps-rest-model-acess.mps-plugin.build.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:b61e466d-2b62-484c-a3b0-37acdf6898f0(org.modelix.mps.rest.model.acess.plugin.plugin) in IdeaFile[path: /Users/silveira/Repositories/mps-rest-model-access/mps-plugin/solutions/org.modelix.mps.rest.model.acess.plugin/models/org.modelix.mps.rest.model.acess.plugin.plugin.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,25 +473,16 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
+              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="org" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:fc49d5a3-c459-4089-b0b6-a40402d62ee5(org.modelix.mps-rest-model-acess.mps-plugin.build) in IdeaFile[path: /Users/silveira/Repositories/mps-rest-model-access/mps-plugin/solutions/org.modelix.mps.rest.model.access.mps.plugin.build/models/org.modelix.mps-rest-model-acess.mps-plugin.build.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7795944997207795039" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="FileSystem" />
     </panes>
   </component>
@@ -500,6 +493,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

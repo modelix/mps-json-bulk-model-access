@@ -1,6 +1,7 @@
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization")
+    `maven-publish`
 }
 
 group = "org.modelix.mps-rest-model-access.client"
