@@ -46,7 +46,7 @@ val copyDependencies = tasks.create<Copy>("copyDependencies") {
 
 val copyServer = tasks.create<Copy>("copyServer"){
     from(server)
-    into("$projectDir/solutions/org.modelix.mps.rest.model.acess.mps.plugin/lib")
+    into("$projectDir/solutions/org.modelix.mps.rest.model.acess.plugin/lib")
 }
 
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildDependencies.fileCollection { true }

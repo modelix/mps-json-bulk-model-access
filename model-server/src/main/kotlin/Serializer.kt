@@ -31,7 +31,7 @@ fun SProperty.serialize(node : SNode) : Property {
     )
 }
 
-fun SProperty.value(node : SNode) : String{
+fun SProperty.value(node : SNode) : String?{
     return when(this.type){
         SPrimitiveTypes.INTEGER -> SPropertyOperations.getInteger(node,this).toString()
         SPrimitiveTypes.BOOLEAN -> SPropertyOperations.getBoolean(node,this).toString()
