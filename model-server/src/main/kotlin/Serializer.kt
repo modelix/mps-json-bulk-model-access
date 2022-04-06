@@ -6,12 +6,15 @@ import jetbrains.mps.smodel.adapter.structure.concept.SConceptAdapterById
 import jetbrains.mps.smodel.adapter.structure.link.SContainmentLinkAdapterById
 import jetbrains.mps.smodel.adapter.structure.property.SPropertyAdapterById
 import jetbrains.mps.smodel.adapter.structure.ref.SReferenceLinkAdapterById
+import jetbrains.mps.smodel.adapter.structure.types.SEnumerationAdapter
 import jetbrains.mps.smodel.adapter.structure.types.SPrimitiveTypes
+import org.jetbrains.mps.openapi.language.SDataType
 import org.jetbrains.mps.openapi.language.SProperty
 import org.jetbrains.mps.openapi.model.SModel
 import org.jetbrains.mps.openapi.model.SNode
 import org.jetbrains.mps.openapi.model.SReference
 import org.modelix.mps.rest.model.access.api.*
+
 
 fun SNode.serialize() : Node {
     return Node(
@@ -32,9 +35,10 @@ fun SProperty.serialize(node : SNode) : Property {
 }
 
 fun SProperty.value(node : SNode) : String?{
-    return when(this.type){
+    return when(type){
         SPrimitiveTypes.INTEGER -> SPropertyOperations.getInteger(node,this).toString()
         SPrimitiveTypes.BOOLEAN -> SPropertyOperations.getBoolean(node,this).toString()
+        is SEnumerationAdapter -> SPropertyOperations.getEnum(node,this).name
         else -> SPropertyOperations.getString(node,this)
     }
 }
