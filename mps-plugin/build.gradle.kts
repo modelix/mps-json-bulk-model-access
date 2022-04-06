@@ -40,7 +40,6 @@ val extractMps = tasks.create<Copy>("extractMps"){
 
 val dependencies = File(buildDir,"dependencies")
 val copyDependencies = tasks.create<Copy>("copyDependencies") {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
     from({ buildDependencies.resolve().map { zipTree(it) } })
     into(dependencies)
 }
