@@ -19,7 +19,7 @@ import org.modelix.mps.rest.model.access.api.*
 fun SNode.serialize() : Node {
     return Node(
         id = this.nodeId.toString(),
-        concept = (this.concept as SConceptAdapterById).serialize(),
+        conceptId = "mps:${(this.concept as SConceptAdapterById).id.serialize()}",
         properties = this.properties.map { it.serialize(this) },
         children = this.children.map { Child((it.containmentLink as SContainmentLinkAdapterById).serialize(), it.serialize()) },
         references = this.references.map { it.serialize()}

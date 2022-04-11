@@ -1,4 +1,4 @@
-buildscript {
+    buildscript {
     repositories {
         maven { url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr") }
         mavenCentral()

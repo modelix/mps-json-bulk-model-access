@@ -16,7 +16,7 @@ fun Node.deserialize(area: IArea, role: String? = null): MPSRemoteNode {
         }.toMutableMap(),
         properties = this.properties.associate { Pair(it.name, it.value) }.toMutableMap(),
         references = this.references.associate { Pair(it.referenceLink,it.deserialize()) }.toMutableMap(),
-        conceptId = "",
+        conceptId = this.conceptId,
         role = role
     )
 }

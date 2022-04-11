@@ -12,7 +12,6 @@ class MPSRemoteNode(
     val properties: MutableMap<String, String?>,
     val references: MutableMap<String, INodeReference>,
     val role : String?,
-    //todo: look into api-gen uuid
     val conceptId : String
 ): INode {
     override val allChildren: Iterable<INode>

@@ -5,12 +5,7 @@
       <change beforePath="$enabler.home$/code/arche-web/devstack-authproxy/build.gradle" beforeDir="false" afterPath="$enabler.home$/code/arche-web/devstack-authproxy/build.gradle" afterDir="false" />
       <change beforePath="$enabler.home$/code/arche-web/modelix/kubernetes/common/proxy.yaml" beforeDir="false" afterPath="$enabler.home$/code/arche-web/modelix/kubernetes/common/proxy.yaml" afterDir="false" />
       <change beforePath="$enabler.home$/code/arche-web/repo-overview/src/main/kotlin/com/cso/enabler/Kubernetes.kt" beforeDir="false" afterPath="$enabler.home$/code/arche-web/repo-overview/src/main/kotlin/com/cso/enabler/Kubernetes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/model_api_js_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/artifacts/model_api_js_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/model_api_jvm_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/artifacts/model_api_jvm_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/model_client_jvm_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/artifacts/model_client_jvm_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model-server/src/main/kotlin/Serializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../model-server/src/main/kotlin/Serializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/org.modelix.mps.rest.model.access.plugin.build/models/org.modelix.mps-rest-model-acess.mps-plugin.build.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/org.modelix.mps.rest.model.access.plugin.build/models/org.modelix.mps-rest-model-acess.mps-plugin.build.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +26,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="a6e243a5-9b86-4f9a-8972-44033abcae3d/r:30d10cbd-9b6e-4bd2-90d0-9bdd18b9dbf9(TempModulea6e243a5-9b86-4f9a-8972-44033abcae3d/ConsoleModel_210100193065552)">
+            <model ref="9a5eabfa-ff40-40c4-a682-dceb92d9adb5/r:b5037481-ddf5-4824-aad5-8b7d7133acfd(TempModule9a5eabfa-ff40-40c4-a682-dceb92d9adb5/ConsoleModel_215115101044961)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -51,11 +46,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1oqSG6gRPNH">
-                <node concept="3balQm" id="1oqSG6gRPNI" role="aymYE" />
-                <node concept="2Clz$F" id="1oqSG6gRPNJ" role="aymYO" />
-                <node concept="2_V_lH" id="1oqSG6gRPNK" role="1PhJh3">
-                  <ref role="2_V_lI" node="1oqSG6gRPNJ" resolve="CommandHolder" />
+              <node concept="aymSD" id="5_WZ3WAY1Qi">
+                <node concept="3balQm" id="5_WZ3WAY1Qj" role="aymYE" />
+                <node concept="2Clz$F" id="5_WZ3WAY1Qk" role="aymYO" />
+                <node concept="2_V_lH" id="5_WZ3WAY1Ql" role="1PhJh3">
+                  <ref role="2_V_lI" node="5_WZ3WAY1Qk" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -373,7 +368,6 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -387,6 +381,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mps-plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -410,12 +426,6 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mps-plugin" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -424,35 +434,16 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="ProjectViewState">

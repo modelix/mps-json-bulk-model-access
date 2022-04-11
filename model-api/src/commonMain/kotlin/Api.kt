@@ -24,7 +24,7 @@ data class Reference (
 @Serializable
 data class Node(
     val id : String,
-    val concept : String,
+    val conceptId : String,
     val properties : List<Property>,
     val children : List<Child>,
     val references : List<Reference>
