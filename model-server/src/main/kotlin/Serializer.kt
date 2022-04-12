@@ -21,7 +21,7 @@ fun SNode.serialize() : Node {
         id = this.nodeId.toString(),
         conceptId = "mps:${(this.concept as SConceptAdapterById).id.serialize()}",
         properties = this.properties.map { it.serialize(this) },
-        children = this.children.map { Child((it.containmentLink as SContainmentLinkAdapterById).serialize(), it.serialize()) },
+        children = this.children.map { Child(it.containmentLink!!.name, it.serialize()) },
         references = this.references.map { it.serialize()}
     )
 }
