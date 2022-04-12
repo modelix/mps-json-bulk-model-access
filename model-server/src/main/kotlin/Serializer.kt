@@ -45,7 +45,7 @@ fun SProperty.value(node : SNode) : String?{
 
 fun SReference.serialize() : Reference {
     return Reference(
-        (this.link as SReferenceLinkAdapterById).serialize(),
+        this.link.name,
         SNodePointer.serialize(targetNodeReference),
     )
 }
