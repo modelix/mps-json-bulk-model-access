@@ -72,7 +72,6 @@ class MPSRemoteClient(val host: String, val port: Int) {
                 throw ModelNotLoadedException(ref.modelId)
             }
         }
-        //todo: return other crap
         return null
     }
 

@@ -8,7 +8,7 @@ class MPSRemoteModel(
     val area: MPSRemoteModelArea,
 ) : INode{
     override val allChildren: Iterable<INode>
-        get() =  area.children
+        get() =  area.roots
     override val concept: IConcept?
         get() = TODO("Not yet implemented")
     override val isValid: Boolean
@@ -23,7 +23,7 @@ class MPSRemoteModel(
 
     override fun getArea(): IArea = area;
 
-    override fun getChildren(role: String?): Iterable<INode> = area.children
+    override fun getChildren(role: String?): Iterable<INode> = area.roots
 
     override fun getPropertyRoles(): List<String> = emptyList()
 

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a96db9-fc42-4941-9239-7f1a28bfd50c" name="Default Changelist" comment="">
-      <change beforePath="$enabler.home$/code/arche-web/devstack-authproxy/build.gradle" beforeDir="false" afterPath="$enabler.home$/code/arche-web/devstack-authproxy/build.gradle" afterDir="false" />
-      <change beforePath="$enabler.home$/code/arche-web/modelix/kubernetes/common/proxy.yaml" beforeDir="false" afterPath="$enabler.home$/code/arche-web/modelix/kubernetes/common/proxy.yaml" afterDir="false" />
-      <change beforePath="$enabler.home$/code/arche-web/repo-overview/src/main/kotlin/com/cso/enabler/Kubernetes.kt" beforeDir="false" afterPath="$enabler.home$/code/arche-web/repo-overview/src/main/kotlin/com/cso/enabler/Kubernetes.kt" afterDir="false" />
+      <change beforePath="$enabler.home$/code/arche-web/devstack-authproxy/src/main/kotlin/technology/cariad/arche/web/Application.kt" beforeDir="false" afterPath="$enabler.home$/code/arche-web/devstack-authproxy/src/main/kotlin/technology/cariad/arche/web/Application.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,45 +16,6 @@
         <option value="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
         <option value="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
       </set>
-    </option>
-  </component>
-  <component name="ConsoleHistory">
-    <option name="tabs">
-      <list>
-        <TabState>
-          <option name="title" value="Console" />
-          <tab>
-            <model ref="9a5eabfa-ff40-40c4-a682-dceb92d9adb5/r:b5037481-ddf5-4824-aad5-8b7d7133acfd(TempModule9a5eabfa-ff40-40c4-a682-dceb92d9adb5/ConsoleModel_215115101044961)">
-              <persistence version="9" />
-              <languages>
-                <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
-              </languages>
-              <imports />
-              <registry>
-                <language id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base">
-                  <concept id="1583916890557930028" name="jetbrains.mps.console.base.structure.ConsoleRoot" flags="ng" index="aymSD">
-                    <child id="1583916890557930415" name="history" index="aymYE" />
-                    <child id="1583916890557930417" name="commandHolder" index="aymYO" />
-                    <child id="9025248442620242919" name="cursor" index="1PhJh3" />
-                  </concept>
-                  <concept id="5758176878586720817" name="jetbrains.mps.console.base.structure.CommandHolderRef" flags="ng" index="2_V_lH">
-                    <reference id="5758176878586720818" name="target" index="2_V_lI" />
-                  </concept>
-                  <concept id="351968380916615243" name="jetbrains.mps.console.base.structure.CommandHolder" flags="ng" index="2Clz$F" />
-                  <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
-                </language>
-              </registry>
-              <node concept="aymSD" id="5_WZ3WAY1Qi">
-                <node concept="3balQm" id="5_WZ3WAY1Qj" role="aymYE" />
-                <node concept="2Clz$F" id="5_WZ3WAY1Qk" role="aymYO" />
-                <node concept="2_V_lH" id="5_WZ3WAY1Ql" role="1PhJh3">
-                  <ref role="2_V_lI" node="5_WZ3WAY1Qk" resolve="CommandHolder" />
-                </node>
-              </node>
-            </model>
-          </tab>
-        </TabState>
-      </list>
     </option>
   </component>
   <component name="DefaultSearchOptions3">
@@ -368,81 +327,12 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="449011d8-ce64-47d2-9dc9-87b407588952" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:fc49d5a3-c459-4089-b0b6-a40402d62ee5(org.modelix.mps-rest-model-acess.mps-plugin.build) in IdeaFile[path: /Users/silveira/Repositories/mps-rest-model-access/mps-plugin/solutions/org.modelix.mps.rest.model.access.plugin.build/models/org.modelix.mps-rest-model-acess.mps-plugin.build.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mps-plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
+          <SELECTED />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="FileSystem" />
     </panes>
   </component>

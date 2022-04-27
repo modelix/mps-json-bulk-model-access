@@ -1,7 +1,4 @@
-import org.modelix.model.api.IConcept
-import org.modelix.model.api.IConceptReference
-import org.modelix.model.api.INode
-import org.modelix.model.api.INodeReference
+import org.modelix.model.api.*
 import org.modelix.model.area.AbstractArea
 import org.modelix.model.area.IAreaReference
 import org.modelix.mps.rest.model.access.api.Model
@@ -9,11 +6,10 @@ import org.modelix.mps.rest.model.access.api.Model
 class MPSRemoteModelArea(model : Model, val client : MPSRemoteClient): AbstractArea(){
 
     val modelId: String
-    val children : List<MPSRemoteNode>
-
+    val roots : List<MPSRemoteNode>
     init {
         this.modelId = model.modelId
-        this.children = model.roots.map { it.deserialize(this) }
+        this.roots = model.roots.map { it.deserialize(this) }
     }
 
     override fun getReference(): IAreaReference {
@@ -29,7 +25,10 @@ class MPSRemoteModelArea(model : Model, val client : MPSRemoteClient): AbstractA
     override fun resolveOriginalNode(ref: INodeReference): INode? {
         if(ref is MPSRemoteNodeRerence){
             if(ref.modelId == modelId){
-                return this.children.find { it.id == ref.nodeId }
+                this.roots
+                    .flatMap { it.getDescendants(true)
+                        .filterIsInstance<MPSRemoteNode>() }
+                    .find { it.id == ref.nodeId }
             }else{
                 return client.resolveReference(ref)
             }
