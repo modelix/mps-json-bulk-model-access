@@ -79,8 +79,12 @@ class MPSRemoteNodeRerence : INodeReference {
 
     constructor(nodePointer : String){
         val slash = nodePointer.lastIndexOf('/')
+        val lParens = nodePointer.indexOf('(')
 
-        this.modelId = nodePointer.substring(0, slash)
+        this.modelId =
+            if(lParens != -1) nodePointer.substring(0, lParens)
+            else nodePointer.substring(0, slash)
+
         this.nodeId = nodePointer.substring(slash + 1)
     }
 
