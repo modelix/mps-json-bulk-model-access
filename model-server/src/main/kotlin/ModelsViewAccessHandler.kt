@@ -2,6 +2,7 @@ package org.modelix.mps.rest.model.access.server
 
 import io.netty.channel.Channel
 import io.netty.handler.codec.http.*
+import jetbrains.mps.smodel.SModelStereotype
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import org.jetbrains.mps.openapi.module.SRepository
@@ -50,7 +51,10 @@ class ModelsViewAccessHandler {
                         HttpMethod.GET -> {
                             var views: List<ModelView>? = null;
                             repo.modelAccess.runReadAction {
-                                views = repo.modules.flatMap { it.models.map { it.serializeView() } }
+                                views = repo.modules.flatMap {
+                                    it.models.filter { sModel -> !SModelStereotype.isDescriptorModel(sModel) }
+                                        .map { sModel -> sModel.serializeView() }
+                                }
                             }
                             if (views == null) {
                                 respondInternalServerError(request, channel)
