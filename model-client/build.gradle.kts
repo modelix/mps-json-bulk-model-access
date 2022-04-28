@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "org.modelix.mps-rest-model-access"
-version = "0.4"
+version = "0.5"
 
 val ktor_version : String by project
 
