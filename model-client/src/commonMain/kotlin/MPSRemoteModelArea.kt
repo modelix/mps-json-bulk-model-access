@@ -6,8 +6,11 @@ import org.modelix.mps.rest.model.access.api.Model
 class MPSRemoteModelArea(model : Model, val client : MPSRemoteClient): AbstractArea(){
 
     val modelId: String
+    val modelName: String
     val roots : List<MPSRemoteNode>
+
     init {
+        this.modelName = model.name
         this.modelId = model.modelId
         this.roots = model.roots.map { it.deserialize(this) }
     }
