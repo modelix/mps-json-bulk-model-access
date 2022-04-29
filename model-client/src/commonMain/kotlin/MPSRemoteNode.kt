@@ -1,5 +1,4 @@
 import org.modelix.model.api.IConcept
-import org.modelix.model.api.IConceptReference
 import org.modelix.model.api.INode
 import org.modelix.model.api.INodeReference
 import org.modelix.model.area.IArea
@@ -43,11 +42,9 @@ class MPSRemoteNode(
         }
     }
 
-    override fun addNewChild(role: String?, index: Int, concept: IConcept?): INode {
-        TODO("Not yet implemented")
-    }
+    override fun getArea(): IArea = parentArea
 
-    override fun getArea(): IArea {
+    override fun addNewChild(role: String?, index: Int, concept: IConcept?): INode {
         TODO("Not yet implemented")
     }
 
