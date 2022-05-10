@@ -25,6 +25,10 @@ class MPSRemoteModel(
 
     override fun getChildren(role: String?): Iterable<INode> = area.roots
 
+    override fun getConceptReference(): IConceptReference? {
+        TODO("Not yet implemented")
+    }
+
     override fun getPropertyRoles(): List<String> = emptyList()
 
     override fun getPropertyValue(role: String): String? = null

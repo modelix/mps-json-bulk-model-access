@@ -1,4 +1,5 @@
 import org.modelix.model.api.IConcept
+import org.modelix.model.api.IConceptReference
 import org.modelix.model.api.INode
 import org.modelix.model.api.INodeReference
 import org.modelix.model.area.IArea
@@ -40,6 +41,10 @@ class MPSRemoteNode(
         }else{
             return children.flatMap { it.value }
         }
+    }
+
+    override fun getConceptReference(): IConceptReference? {
+        TODO("Not yet implemented")
     }
 
     override fun getArea(): IArea = parentArea

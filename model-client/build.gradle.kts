@@ -32,7 +32,7 @@ kotlin {
             dependencies {
                 implementation("io.ktor:ktor-client-core:$ktor_version")
                 implementation(project(":model-api"))
-                implementation("org.modelix:model-api:2020.3.5")
+                implementation("org.modelix:model-api:2022.0.+")
                 implementation("org.modelix:model-client:0.0.55")
                 implementation("io.ktor:ktor-client-serialization:$ktor_version")
             }
