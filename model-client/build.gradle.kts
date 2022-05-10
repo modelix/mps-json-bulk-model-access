@@ -10,9 +10,13 @@ version = "0.5"
 val ktor_version : String by project
 
 repositories {
-    mavenCentral()
     maven {
-        url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr")
+        name = "GitHubPackages"
+        url = uri("https://maven.pkg.github.com/modelix/model-api")
+        credentials {
+            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+            password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+        }
     }
     maven {
         name = "GitHubPackages"
@@ -21,6 +25,10 @@ repositories {
             username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
             password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
         }
+    }
+    mavenCentral()
+    maven {
+        url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr")
     }
 }
 
