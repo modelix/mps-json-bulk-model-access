@@ -26,3 +26,6 @@ jobs:
       uses: gradle/gradle-build-action@v2.1.5
       with:
         arguments: model-client:build
+      env:
+        USERNAME: ${{ github.actor }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
