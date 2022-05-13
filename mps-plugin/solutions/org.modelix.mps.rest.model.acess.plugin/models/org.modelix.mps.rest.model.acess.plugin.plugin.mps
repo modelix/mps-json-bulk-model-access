@@ -112,7 +112,7 @@
       <concept id="6040064942661848792" name="jetbrains.mps.ide.httpsupport.structure.QuerySegment" flags="ng" index="std78">
         <property id="6040064942662280271" name="segment" index="svBHv" />
       </concept>
-      <concept id="3465992077578729664" name="jetbrains.mps.ide.httpsupport.structure.HttpMethod_ANY" flags="ng" index="1yv5mI" />
+      <concept id="3520791039919950202" name="jetbrains.mps.ide.httpsupport.structure.HttpMethod_Get" flags="ng" index="3e4HmL" />
       <concept id="2332657309400282169" name="jetbrains.mps.ide.httpsupport.structure.QueryParameter" flags="ng" index="3_QJtf">
         <child id="5111696079053634063" name="parameterConverter" index="1TjXUf" />
       </concept>
@@ -126,6 +126,9 @@
     <property role="TrG5h" value="modelsview" />
     <node concept="std77" id="1s6lPHFX46u" role="std7D">
       <node concept="std78" id="6D0yQlqjhAR" role="std7y">
+        <property role="svBHv" value="rest" />
+      </node>
+      <node concept="std78" id="3oI_IjfyglN" role="std7y">
         <property role="svBHv" value="modelsview" />
       </node>
     </node>
@@ -368,7 +371,7 @@
         </node>
       </node>
     </node>
-    <node concept="1yv5mI" id="YiYj8Kpxvn" role="3e4HnV" />
+    <node concept="3e4HmL" id="3oI_IjfyglQ" role="3e4HnV" />
   </node>
   <node concept="pFx2x" id="6D0yQlqjqt5">
     <property role="TrG5h" value="models" />
@@ -382,6 +385,9 @@
     </node>
     <node concept="std77" id="6D0yQlqjqt6" role="std7D">
       <node concept="std78" id="6D0yQlqjqzh" role="std7y">
+        <property role="svBHv" value="rest" />
+      </node>
+      <node concept="std78" id="3oI_Ijfyg1F" role="std7y">
         <property role="svBHv" value="models" />
       </node>
     </node>

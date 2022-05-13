@@ -5,25 +5,28 @@ plugins {
 }
 
 group = "org.modelix.mps-rest-model-access"
-version = "0.6"
+version = "1.0"
 
 val ktor_version : String by project
+
+val user = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+val key = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
 
 repositories {
     maven {
         name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/modelix/model-api")
         credentials {
-            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-            password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+            username = user
+            password = key
         }
     }
     maven {
         name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/modelix/modelix")
         credentials {
-            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-            password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+            username = user
+            password = key
         }
     }
     mavenCentral()
@@ -61,8 +64,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/modelix/mps-rest-model-access")
             credentials {
-                username = project.findProperty("gpr.user") as? String ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as? String ?: System.getenv("TOKEN")
+                username = user
+                password = key
             }
         }
     }

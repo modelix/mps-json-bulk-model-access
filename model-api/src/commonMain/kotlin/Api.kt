@@ -37,6 +37,7 @@ data class Model(
     val roots : List<Node>
 ){
     companion object{
+        val prefix :String = "rest"
         val path : String = "models"
     }
 }
@@ -44,6 +45,7 @@ data class Model(
 @Serializable
 data class ModelView(val modelId : String, val name : String){
     companion object{
+        val prefix :String = "rest"
         val path : String = "modelsview"
     }
 }

@@ -32,20 +32,21 @@ class ModelsAccessHandler {
             val path = queryStringDecoder.path();
             val method = request.method()
 
-            val array = if (path.startsWith("/")) path.substring(1).split("/") else path.split("/")
+            val array = path.split("/").dropWhile { it.isEmpty() }.dropLastWhile{ it.isEmpty() }
 
-            if (array.size != 2) {
+            if (array.size != 3) {
                 respondBadRequest(request, channel)
                 return;
             }
 
             val prefix = array[0]
-            if (!Model.path.equals(prefix)) {
+            val modelPath = array[1]
+            if (!Model.prefix.equals(prefix) || !Model.path.equals(modelPath)) {
                 respondBadRequest(request, channel)
                 return;
             }
 
-            val modelId = array[1]
+            val modelId = array[2]
 
             when (method) {
                 HttpMethod.GET -> {
@@ -57,7 +58,7 @@ class ModelsAccessHandler {
                     if (model == null) {
                         respondInternalServerError(request, channel, "Couldn't find model with id $modelId")
                     } else {
-                        respondOk(request, channel, Json.encodeToString(model).encodeToByteArray())
+                            respondOk(request, channel, Json.encodeToString(model).encodeToByteArray())
                     }
                 }
                 else -> respondMethodNotAllowed(request, channel)

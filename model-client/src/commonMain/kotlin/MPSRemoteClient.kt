@@ -30,7 +30,7 @@ class MPSRemoteClient(val host: String, val port: Int) {
         client().use {
             val response: HttpResponse = it.get {
                 url {
-                    path(ModelView.path)
+                    path(ModelView.prefix,ModelView.path)
                 }
             }
 
@@ -51,7 +51,7 @@ class MPSRemoteClient(val host: String, val port: Int) {
         client().use {
             val response: HttpResponse = it.get {
                 url {
-                    path(Model.path, modelId)
+                    path(Model.prefix,Model.path, modelId)
                 }
             }
 

@@ -32,21 +32,22 @@ class ModelsViewAccessHandler {
             val path = queryStringDecoder.path();
             val method = request.method()
 
-            val array = if (path.startsWith("/")) path.substring(1).split("/") else path.split("/")
+            val array = path.split("/").dropWhile { it.isEmpty() }.dropLastWhile { it.isEmpty() }
 
-            if (array.isEmpty() || array.size > 2) {
+            if (array.isEmpty() || array.size > 3) {
                 respondBadRequest(request, channel)
                 return;
             }
 
             val prefix = array[0]
-            if (!ModelView.path.equals(prefix)) {
+            val modelViewPath = array[1]
+            if (!ModelView.prefix.equals(prefix) || !ModelView.path.equals(modelViewPath)) {
                 respondBadRequest(request, channel)
                 return;
             }
 
             when {
-                array.size == 1 -> {
+                array.size == 2 -> {
                     when (method) {
                         HttpMethod.GET -> {
                             var views: List<ModelView>? = null;
@@ -65,10 +66,10 @@ class ModelsViewAccessHandler {
                         else -> respondMethodNotAllowed(request, channel)
                     }
                 }
-                array.size == 2 -> {
+                array.size == 3 -> {
                     when (method) {
                         HttpMethod.GET -> {
-                            val id = array[1]
+                            val id = array[2]
                             var model: ModelView? = null
 
                             repo.modelAccess.runReadAction {
