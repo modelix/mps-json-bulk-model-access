@@ -79,11 +79,11 @@
         </uses>
         <library jar="../../lib/annotations-13.0.jar" />
         <library jar="../../lib/kotlinx-serialization-core-jvm-1.3.2.jar" />
-        <library jar="../../lib/kotlin-stdlib-jdk7-1.6.10.jar" />
         <library jar="../../lib/kotlinx-serialization-json-jvm-1.3.2.jar" />
-        <library jar="../../lib/kotlin-stdlib-jdk8-1.6.10.jar" />
-        <library jar="../../lib/model-api-jvm-0.1.jar" />
         <library jar="../../lib/model-server-0.1.jar" />
+        <library jar="../../lib/model-api-jvm-1.0.jar" />
+        <library jar="../../lib/kotlin-stdlib-jdk7-1.6.20.jar" />
+        <library jar="../../lib/kotlin-stdlib-jdk8-1.6.20.jar" />
         <classpath>
           <entry path="." />
         </classpath>
@@ -95,9 +95,6 @@
       <fileset dir="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.modelix.mps.rest.model.acess.plugin.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.modelix.mps.rest.model.acess.mps.plugin-models">
-      <fileset dir="${basedir}/solutions/org.modelix.mps.rest.model.acess.mps.plugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
-    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.modelix.mps.rest.model.acess.plugin-models">
       <fileset dir="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
@@ -109,7 +106,6 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/org.modelix.mps.rest.model.acess.plugin.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.modelix.mps.rest.model.acess.mps.plugin-models" prefix="module/models" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.modelix.mps.rest.model.acess.plugin-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.layout}/mps.plugin/lib" />
@@ -289,11 +285,11 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/annotations-13.0.jar" />
         <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlinx-serialization-core-jvm-1.3.2.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-jdk7-1.6.10.jar" />
         <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlinx-serialization-json-jvm-1.3.2.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-jdk8-1.6.10.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/model-api-jvm-0.1.jar" />
         <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/model-server-0.1.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/model-api-jvm-1.0.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-jdk7-1.6.20.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-jdk8-1.6.20.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
