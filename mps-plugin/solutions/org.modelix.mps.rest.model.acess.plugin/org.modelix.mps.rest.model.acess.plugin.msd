@@ -8,7 +8,7 @@
       <sourceRoot location="lib" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="model-api-jvm-0.1.jar" />
+      <sourceRoot location="model-api-jvm-1.0.jar" />
       <sourceRoot location="model-server-0.1.jar" />
     </modelRoot>
   </models>
@@ -20,10 +20,10 @@
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/annotations-13.0.jar" />
     <stubModelEntry path="${module}/lib/kotlinx-serialization-core-jvm-1.3.2.jar" />
-    <stubModelEntry path="${module}/lib/kotlin-stdlib-jdk7-1.6.10.jar" />
+    <stubModelEntry path="${module}/lib/kotlin-stdlib-jdk7-1.6.20.jar" />
     <stubModelEntry path="${module}/lib/kotlinx-serialization-json-jvm-1.3.2.jar" />
-    <stubModelEntry path="${module}/lib/kotlin-stdlib-jdk8-1.6.10.jar" />
-    <stubModelEntry path="${module}/lib/model-api-jvm-0.1.jar" />
+    <stubModelEntry path="${module}/lib/kotlin-stdlib-jdk8-1.6.20.jar" />
+    <stubModelEntry path="${module}/lib/model-api-jvm-1.0.jar" />
     <stubModelEntry path="${module}/lib/model-server-0.1.jar" />
   </stubModelEntries>
   <sourcePath />
