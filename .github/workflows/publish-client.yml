@@ -7,7 +7,11 @@
 
 name: Publish client
 
-on: [workflow_dispatch]  
+on: [workflow_dispatch]
+
+env:
+  USERNAME: ${{ github.actor }}
+  TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
@@ -34,6 +38,3 @@ jobs:
       uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
       with:
         arguments: model-client:publishAllPublicationsToGitHubPackagesRepository
-      env:
-        USERNAME: ${{ github.actor }}
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
