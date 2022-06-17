@@ -45,6 +45,37 @@ class MPSRemoteClient(val host: String, val port: Int) {
         }
     }
 
+    suspend fun loadModelAreas(modelIds : List<String>) : Collection<MPSRemoteModelArea> {
+        val client = client()
+
+        val result = modelIds.associateWith { id ->
+            val response: HttpResponse = client.get {
+                url {
+                    path(Model.prefix,Model.path, id)
+                }
+            }
+
+            if(!response.status.isSuccess()){
+                when (response.status) {
+                    HttpStatusCode.NotFound -> {
+                        throw ModelNotFoundException(id)
+                    }
+                    else -> {
+                        throw MPSRemoteClientException("Something failed when loading model '$id'", response.status.value ,response.readText())
+                    }
+                }
+            }
+
+            MPSRemoteModelArea(response.receive(), this)
+        }
+
+        client.close()
+
+        areas.putAll(result)
+
+        return result.values
+    }
+
     suspend fun loadModelArea(modelId: String): MPSRemoteModelArea? {
         client().use {
             val response: HttpResponse = it.get {
