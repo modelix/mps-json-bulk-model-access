@@ -44,3 +44,12 @@ fun respondBadRequest(request : HttpRequest, channel: Channel, msg : String? = "
     response.status = HttpResponseStatus.BAD_REQUEST
     response.send(channel,request)
 }
+
+fun respondNotFoundError(request: HttpRequest, channel: Channel, msg : String? = "Not found") {
+    val response = response(
+        ContentType.TEXT_PLAIN.mimeType,
+        Unpooled.copiedBuffer(msg , CharsetUtil.UTF_8)
+    )
+    response.status = HttpResponseStatus.NOT_FOUND
+    response.send(channel,request)
+}

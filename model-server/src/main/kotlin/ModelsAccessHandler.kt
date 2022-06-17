@@ -56,9 +56,9 @@ class ModelsAccessHandler {
                     }
 
                     if (model == null) {
-                        respondInternalServerError(request, channel, "Couldn't find model with id $modelId")
+                        respondNotFoundError(request, channel, "Couldn't find model with id $modelId")
                     } else {
-                            respondOk(request, channel, Json.encodeToString(model).encodeToByteArray())
+                        respondOk(request, channel, Json.encodeToString(model).encodeToByteArray())
                     }
                 }
                 else -> respondMethodNotAllowed(request, channel)

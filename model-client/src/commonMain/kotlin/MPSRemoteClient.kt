@@ -34,20 +34,18 @@ class MPSRemoteClient(val host: String, val port: Int) {
                 }
             }
 
-            if (response.status == HttpStatusCode.OK) {
-                return response.receive()
-            } else {
-                //todo: log something here
-                return emptyList()
+            when (response.status) {
+                HttpStatusCode.OK -> {
+                    return response.receive()
+                }
+                else -> {
+                    throw MPSRemoteClientException("Something failed when loading models view", response.status.value ,response.readText())
+                }
             }
         }
     }
 
     suspend fun loadModelArea(modelId: String): MPSRemoteModelArea? {
-        var modelArea: MPSRemoteModelArea? = null
-
-        // TODO: if map has model return.
-
         client().use {
             val response: HttpResponse = it.get {
                 url {
@@ -55,13 +53,20 @@ class MPSRemoteClient(val host: String, val port: Int) {
                 }
             }
 
-            if (response.status == HttpStatusCode.OK) {
-                val model = response.receive<Model>()
-                modelArea = MPSRemoteModelArea(model, this)
-                areas[modelId] = modelArea!!
+            when (response.status) {
+                HttpStatusCode.OK -> {
+                    areas[modelId] = MPSRemoteModelArea(response.receive(), this)
+                }
+                HttpStatusCode.NotFound -> {
+                    throw ModelNotFoundException(modelId)
+                }
+                else -> {
+                    throw MPSRemoteClientException("Something failed when loading model '$modelId'", response.status.value ,response.readText())
+                }
             }
         }
-        return modelArea
+
+        return areas[modelId]
     }
 
     fun resolveReference(ref: INodeReference): INode? {
@@ -77,10 +82,8 @@ class MPSRemoteClient(val host: String, val port: Int) {
 
 }
 
-class ModelNotLoadedException(val modelId: String) : Throwable() {
+class ModelNotLoadedException(val modelId: String) : Throwable()
 
-}
+class ModelNotFoundException(val modelId: String) : Throwable()
 
-class ModelNotFoundException(val modelId: String) : Throwable() {
-
-}
+class MPSRemoteClientException(val msg : String, val statusCode : Int, val response : String) : Throwable()
