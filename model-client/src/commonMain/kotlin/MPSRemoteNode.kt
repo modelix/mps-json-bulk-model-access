@@ -6,7 +6,7 @@ import org.modelix.model.area.IArea
 import org.modelix.model.lazy.IConceptReferenceSerializer
 
 class MPSRemoteNode(
-    val parentArea : IArea,
+    val parentArea : MPSRemoteModelArea,
     val id: String,
     val children: MutableMap<String, List<MPSRemoteNode>>,
     val properties: MutableMap<String, String?>,
@@ -23,7 +23,7 @@ class MPSRemoteNode(
     override val parent: INode?
         get() = TODO("Not yet implemented")
     override val reference: INodeReference
-        get() = TODO("Not yet implemented")
+        get() = MPSRemoteNodeRerence(parentArea.modelId, id)
     override val roleInParent: String?
         get() = role
 
@@ -44,7 +44,7 @@ class MPSRemoteNode(
     }
 
     override fun getConceptReference(): IConceptReference? {
-        TODO("Not yet implemented")
+        return concept.getReference()
     }
 
     override fun getArea(): IArea = parentArea

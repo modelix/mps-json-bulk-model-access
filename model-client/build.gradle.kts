@@ -1,11 +1,14 @@
+import org.jetbrains.kotlin.frontend.java.di.createContainerForLazyResolveWithJava
+
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization")
     `maven-publish`
+    `java-library`
 }
 
 group = "org.modelix.mps-rest-model-access"
-version = "1.1"
+version = "1.2"
 
 val ktor_version : String by project
 
@@ -35,8 +38,16 @@ repositories {
     }
 }
 
+
+
 kotlin {
-    jvm()
+    jvm() {
+
+        java {
+            sourceCompatibility = JavaVersion.VERSION_11
+            targetCompatibility = JavaVersion.VERSION_11
+        }
+    }
 
     sourceSets {
         val commonMain by getting {
@@ -53,8 +64,11 @@ kotlin {
             dependencies {
                 implementation("io.ktor:ktor-client-cio:$ktor_version")
             }
+
         }
     }
+
+
 }
 
 publishing {
