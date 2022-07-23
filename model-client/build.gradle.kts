@@ -62,7 +62,8 @@ kotlin {
 
         val jvmMain by getting {
             dependencies {
-                implementation("io.ktor:ktor-client-cio:$ktor_version")
+                api("io.ktor:ktor-client-cio:$ktor_version")
+                api("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.4")
             }
 
         }
