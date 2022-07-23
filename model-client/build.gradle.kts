@@ -52,11 +52,11 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("io.ktor:ktor-client-core:$ktor_version")
-                implementation(project(":model-api"))
-                implementation("org.modelix:model-api:2022.0.+")
-                implementation("org.modelix:model-client:0.0.55")
-                implementation("io.ktor:ktor-client-serialization:$ktor_version")
+                api("io.ktor:ktor-client-core:$ktor_version")
+                api(project(":model-api"))
+                api("org.modelix:model-api:1.0.2")
+                api("org.modelix:model-client:0.0.55")
+                api("io.ktor:ktor-client-serialization:$ktor_version")
             }
         }
 
