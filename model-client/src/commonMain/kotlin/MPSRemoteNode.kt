@@ -42,11 +42,7 @@ class MPSRemoteNode(
             return children.flatMap { it.value }
         }
     }
-
-    override fun getConceptReference(): IConceptReference? {
-        return concept.getReference()
-    }
-
+    
     override fun getArea(): IArea = parentArea
 
     override fun addNewChild(role: String?, index: Int, concept: IConcept?): INode {
