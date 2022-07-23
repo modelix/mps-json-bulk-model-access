@@ -1,8 +1,9 @@
-suspend fun <T> MPSRemoteClient.loadModelSafe(block : suspend () -> T) : T {
-        try{
+suspend fun <T> MPSRemoteClient.loadModelSafe(block: suspend () -> T): T {
+    while(true) {
+        try {
             return block()
-        }catch(e : ModelNotLoadedException){
+        } catch (e: ModelNotLoadedException) {
             this.loadModelArea(e.modelId);
-            return block()
         }
+    }
 }
