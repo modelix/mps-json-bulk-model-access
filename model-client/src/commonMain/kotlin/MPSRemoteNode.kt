@@ -50,6 +50,8 @@ class MPSRemoteNode(
         }
     }
 
+    override fun getConceptReference() = concept.getReference()
+
     override fun getArea(): IArea = parentArea
 
     override fun addNewChild(role: String?, index: Int, concept: IConcept?): INode {
