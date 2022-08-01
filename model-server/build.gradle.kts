@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.modelix.mps-rest-model-access.server"
-version = "0.1"
+version = "0.2"
 
 repositories {
     mavenCentral()

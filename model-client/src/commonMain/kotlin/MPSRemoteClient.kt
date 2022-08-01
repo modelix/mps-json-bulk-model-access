@@ -101,7 +101,7 @@ class MPSRemoteClient(val host: String, val port: Int) {
     }
 
     fun resolveReference(ref: INodeReference): INode? {
-        if (ref is MPSRemoteNodeRerence) {
+        if (ref is MPSRemoteNodeReference) {
             if (areas.contains(ref.modelId)) {
                 return areas[ref.modelId]?.resolveNode(ref)
             } else {

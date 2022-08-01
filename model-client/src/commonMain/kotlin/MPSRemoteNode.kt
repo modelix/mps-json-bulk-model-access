@@ -6,28 +6,35 @@ import org.modelix.model.area.IArea
 import org.modelix.model.lazy.IConceptReferenceSerializer
 
 class MPSRemoteNode(
-    val parentArea : MPSRemoteModelArea,
+    val parentArea: MPSRemoteModelArea,
     val id: String,
     val children: MutableMap<String, List<MPSRemoteNode>>,
     val properties: MutableMap<String, String?>,
     val references: MutableMap<String, INodeReference>,
-    val role : String?,
-    val conceptId : String
-): INode {
+    val role: String?,
+    val conceptId: String,
+    val parentId: String? = null
+) : INode {
     override val allChildren: Iterable<INode>
         get() = children.flatMap { it.value }
     override val concept: IConcept
-        get() = IConceptReferenceSerializer.deserialize(conceptId,null)!!
+        get() = IConceptReferenceSerializer.deserialize(conceptId, null)!!
     override val isValid: Boolean
-        get() = TODO("Not yet implemented")
+        get() = true
     override val parent: INode?
-        get() = TODO("Not yet implemented")
+        get() = parentId?.let { MPSRemoteNodeReference(parentArea.modelId, parentId).resolveNode(this.parentArea) }
     override val reference: INodeReference
-        get() = MPSRemoteNodeRerence(parentArea.modelId, id)
+        get() = MPSRemoteNodeReference(parentArea.modelId, id)
     override val roleInParent: String?
         get() = role
 
     override fun getPropertyRoles(): List<String> = properties.keys.toList()
+    override fun equals(other: Any?): Boolean {
+        if (other is MPSRemoteNode) {
+            return this.reference == other.reference
+        }
+        return false
+    }
 
     override fun getPropertyValue(role: String): String? = properties[role]
 
@@ -36,15 +43,11 @@ class MPSRemoteNode(
     override fun getReferenceTarget(role: String): INode? = references[role]?.resolveNode(parentArea)
 
     override fun getChildren(role: String?): Iterable<INode> {
-        if (role != null){
-            return children[role] ?: emptyList()
-        }else{
-            return children.flatMap { it.value }
+        return if (role != null) {
+            children[role] ?: emptyList()
+        } else {
+            children.flatMap { it.value }
         }
-    }
-
-    override fun getConceptReference(): IConceptReference? {
-        return concept.getReference()
     }
 
     override fun getArea(): IArea = parentArea
@@ -68,23 +71,36 @@ class MPSRemoteNode(
     override fun setReferenceTarget(role: String, target: INode?) {
         TODO("Not yet implemented")
     }
+
+    override fun hashCode(): Int {
+        var result = parentArea.hashCode()
+        result = 31 * result + id.hashCode()
+        return result
+    }
 }
 
-class MPSRemoteNodeRerence : INodeReference {
-    val modelId : String
-    val nodeId : String
+class MPSRemoteNodeReference : INodeReference {
+    val modelId: String
+    val nodeId: String
 
-    constructor(modelId : String, nodeId : String){
+    constructor(modelId: String, nodeId: String) {
         this.modelId = modelId
         this.nodeId = nodeId
     }
 
-    constructor(nodePointer : String){
+    override fun equals(other: Any?): Boolean {
+        if (other is MPSRemoteNodeReference) {
+            return this.nodeId == other.nodeId && this.modelId == other.modelId
+        }
+        return false
+    }
+
+    constructor(nodePointer: String) {
         val slash = nodePointer.lastIndexOf('/')
         val lParens = nodePointer.indexOf('(')
 
         this.modelId =
-            if(lParens != -1) nodePointer.substring(0, lParens)
+            if (lParens != -1) nodePointer.substring(0, lParens)
             else nodePointer.substring(0, slash)
 
         this.nodeId = nodePointer.substring(slash + 1)
@@ -92,5 +108,11 @@ class MPSRemoteNodeRerence : INodeReference {
 
     override fun resolveNode(area: IArea?): INode? {
         return area?.resolveNode(this);
+    }
+
+    override fun hashCode(): Int {
+        var result = modelId.hashCode()
+        result = 31 * result + nodeId.hashCode()
+        return result
     }
 }
