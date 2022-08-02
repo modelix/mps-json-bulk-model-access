@@ -8,8 +8,15 @@
       <sourceRoot location="lib" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="model-api-jvm-1.0.jar" />
-      <sourceRoot location="model-server-0.1.jar" />
+      <sourceRoot location="annotations.jar" />
+      <sourceRoot location="kotlin-stdlib-common.jar" />
+      <sourceRoot location="kotlin-stdlib-jdk7.jar" />
+      <sourceRoot location="kotlin-stdlib-jdk8.jar" />
+      <sourceRoot location="kotlin-stdlib.jar" />
+      <sourceRoot location="kotlinx-serialization-core-jvm.jar" />
+      <sourceRoot location="kotlinx-serialization-json-jvm.jar" />
+      <sourceRoot location="model-api-jvm.jar" />
+      <sourceRoot location="model-server.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -18,13 +25,15 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/annotations-13.0.jar" />
-    <stubModelEntry path="${module}/lib/kotlinx-serialization-core-jvm-1.3.2.jar" />
-    <stubModelEntry path="${module}/lib/kotlin-stdlib-jdk7-1.6.20.jar" />
-    <stubModelEntry path="${module}/lib/kotlinx-serialization-json-jvm-1.3.2.jar" />
-    <stubModelEntry path="${module}/lib/kotlin-stdlib-jdk8-1.6.20.jar" />
-    <stubModelEntry path="${module}/lib/model-api-jvm-1.0.jar" />
-    <stubModelEntry path="${module}/lib/model-server-0.1.jar" />
+    <stubModelEntry path="${module}/lib/annotations.jar" />
+    <stubModelEntry path="${module}/lib/kotlin-stdlib-common.jar" />
+    <stubModelEntry path="${module}/lib/kotlin-stdlib-jdk7.jar" />
+    <stubModelEntry path="${module}/lib/kotlin-stdlib-jdk8.jar" />
+    <stubModelEntry path="${module}/lib/kotlin-stdlib.jar" />
+    <stubModelEntry path="${module}/lib/kotlinx-serialization-core-jvm.jar" />
+    <stubModelEntry path="${module}/lib/kotlinx-serialization-json-jvm.jar" />
+    <stubModelEntry path="${module}/lib/model-api-jvm.jar" />
+    <stubModelEntry path="${module}/lib/model-server.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -55,7 +64,6 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="306183fb-952a-4095-9ca0-a4b846e2036e(org.modelix.modelcheck.mps.plugin)" version="0" />
     <module reference="3257c0a0-131a-49aa-b7eb-4ec72ed06b33(org.modelix.mps.rest.model.acess.plugin)" version="0" />
   </dependencyVersions>
