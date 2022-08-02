@@ -5,7 +5,7 @@
     }
 
     dependencies {
-        classpath("de.itemis.mps:mps-gradle-plugin:1.4.+")
+        classpath("de.itemis.mps:mps-gradle-plugin:1.9.+")
     }
 }
 
