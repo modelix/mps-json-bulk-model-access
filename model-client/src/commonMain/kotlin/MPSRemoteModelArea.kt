@@ -26,14 +26,14 @@ class MPSRemoteModelArea(model : Model, val client : MPSRemoteClient): AbstractA
     }
 
     override fun resolveOriginalNode(ref: INodeReference): INode? {
-        if(ref is MPSRemoteNodeRerence){
-            if(ref.modelId == modelId){
-                return this.roots
+        if(ref is MPSRemoteNodeReference){
+            return if(ref.modelId == modelId){
+                this.roots
                     .flatMap { it.getDescendants(true)
                         .filterIsInstance<MPSRemoteNode>() }
                     .find { it.id == ref.nodeId }
             }else{
-                return client.resolveReference(ref)
+                client.resolveReference(ref)
             }
         }
         return null;

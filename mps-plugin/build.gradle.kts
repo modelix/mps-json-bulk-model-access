@@ -14,7 +14,7 @@ plugins {
 }
 
 group = "org.modelix.mps-rest-model-access"
-version = "1.3"
+version = "1.4"
 
 repositories {
     mavenCentral()
@@ -44,8 +44,16 @@ val copyDependencies = tasks.create<Copy>("copyDependencies") {
     into(dependencies)
 }
 
-val copyServer = tasks.create<Copy>("copyServer"){
+val copyServer = tasks.create<Sync>("copyServer"){
     from(server)
+    rename {filename ->
+        val ra = server.resolvedConfiguration.resolvedArtifacts.find { ra -> ra.file.name == filename }!!
+        if (ra.classifier != null) {
+            "${ra.name}-${ra.classifier}.${ra.extension}"
+        } else {
+            "${ra.name}.${ra.extension}"
+        }
+    }
     into("$projectDir/solutions/org.modelix.mps.rest.model.acess.plugin/lib")
 }
 

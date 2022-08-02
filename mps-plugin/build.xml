@@ -77,13 +77,15 @@
           <language id="l:817e4e70-961e-4a95-98a1-15e9f32231f1:jetbrains.mps.ide.httpsupport" />
           <language id="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" />
         </uses>
-        <library jar="../../lib/annotations-13.0.jar" />
-        <library jar="../../lib/kotlinx-serialization-core-jvm-1.3.2.jar" />
-        <library jar="../../lib/kotlinx-serialization-json-jvm-1.3.2.jar" />
-        <library jar="../../lib/model-server-0.1.jar" />
-        <library jar="../../lib/model-api-jvm-1.0.jar" />
-        <library jar="../../lib/kotlin-stdlib-jdk7-1.6.20.jar" />
-        <library jar="../../lib/kotlin-stdlib-jdk8-1.6.20.jar" />
+        <library jar="../../lib/annotations.jar" />
+        <library jar="../../lib/kotlin-stdlib-common.jar" />
+        <library jar="../../lib/kotlin-stdlib-jdk7.jar" />
+        <library jar="../../lib/kotlin-stdlib-jdk8.jar" />
+        <library jar="../../lib/kotlin-stdlib.jar" />
+        <library jar="../../lib/kotlinx-serialization-core-jvm.jar" />
+        <library jar="../../lib/kotlinx-serialization-json-jvm.jar" />
+        <library jar="../../lib/model-api-jvm.jar" />
+        <library jar="../../lib/model-server.jar" />
         <classpath>
           <entry path="." />
         </classpath>
@@ -214,7 +216,6 @@
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.findUsages.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.api.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.runtime.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.context.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.migration.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.refactoring.runtime.jar" />
@@ -258,20 +259,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
@@ -283,15 +284,17 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/annotations-13.0.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlinx-serialization-core-jvm-1.3.2.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlinx-serialization-json-jvm-1.3.2.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/model-server-0.1.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/model-api-jvm-1.0.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-jdk7-1.6.20.jar" />
-        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-jdk8-1.6.20.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/annotations.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-common.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-jdk7.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib-jdk8.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlin-stdlib.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlinx-serialization-core-jvm.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/kotlinx-serialization-json-jvm.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/model-api-jvm.jar" />
+        <fileset file="${basedir}/solutions/org.modelix.mps.rest.model.acess.plugin/lib/model-server.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />

@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "org.modelix.mps-rest-model-access"
-version = "1.2"
+version = "1.3"
 
 val ktor_version : String by project
 
@@ -54,8 +54,8 @@ kotlin {
             dependencies {
                 implementation("io.ktor:ktor-client-core:$ktor_version")
                 implementation(project(":model-api"))
-                implementation("org.modelix:model-api:2022.0.+")
-                implementation("org.modelix:model-client:0.0.55")
+                implementation("org.modelix:model-api:1.0.2")
+                implementation("org.modelix:model-client:2021.2.103")
                 implementation("io.ktor:ktor-client-serialization:$ktor_version")
             }
         }

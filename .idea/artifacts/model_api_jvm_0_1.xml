@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="model-api-jvm-0.1">
-    <output-path>$PROJECT_DIR$/model-api/build/libs</output-path>
-    <root id="archive" name="model-api-jvm-0.1.jar">
-      <element id="module-output" name="mps-rest-model-access.model-api.jvmMain" />
-    </root>
-  </artifact>
-</component>

@@ -246,17 +246,17 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1oqSG6gRUe2" role="3bR37C">
-          <node concept="1BurEX" id="1oqSG6gRUe3" role="1SiIV1">
-            <node concept="55IIr" id="1oqSG6gRUdX" role="1BurEY">
-              <node concept="2Ry0Ak" id="1oqSG6gRUdY" role="iGT6I">
+        <node concept="1SiIV0" id="7XcypZKMJsP" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJsQ" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJsK" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJsL" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1oqSG6gRUdZ" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7XcypZKMJsM" role="2Ry0An">
                   <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
-                  <node concept="2Ry0Ak" id="1oqSG6gRUe0" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7XcypZKMJsN" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1oqSG6gRUe1" role="2Ry0An">
-                      <property role="2Ry0Am" value="annotations-13.0.jar" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJsO" role="2Ry0An">
+                      <property role="2Ry0Am" value="annotations.jar" />
                     </node>
                   </node>
                 </node>
@@ -264,17 +264,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1oqSG6gRUe9" role="3bR37C">
-          <node concept="1BurEX" id="1oqSG6gRUea" role="1SiIV1">
-            <node concept="55IIr" id="1oqSG6gRUe4" role="1BurEY">
-              <node concept="2Ry0Ak" id="1oqSG6gRUe5" role="iGT6I">
+        <node concept="1SiIV0" id="7XcypZKMJsW" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJsX" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJsR" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJsS" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1oqSG6gRUe6" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7XcypZKMJsT" role="2Ry0An">
                   <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
-                  <node concept="2Ry0Ak" id="1oqSG6gRUe7" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7XcypZKMJsU" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1oqSG6gRUe8" role="2Ry0An">
-                      <property role="2Ry0Am" value="kotlinx-serialization-core-jvm-1.3.2.jar" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJsV" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib-common.jar" />
                     </node>
                   </node>
                 </node>
@@ -282,17 +282,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1oqSG6gRUen" role="3bR37C">
-          <node concept="1BurEX" id="1oqSG6gRUeo" role="1SiIV1">
-            <node concept="55IIr" id="1oqSG6gRUei" role="1BurEY">
-              <node concept="2Ry0Ak" id="1oqSG6gRUej" role="iGT6I">
+        <node concept="1SiIV0" id="7XcypZKMJt3" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJt4" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJsY" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJsZ" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1oqSG6gRUek" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7XcypZKMJt0" role="2Ry0An">
                   <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
-                  <node concept="2Ry0Ak" id="1oqSG6gRUel" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7XcypZKMJt1" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1oqSG6gRUem" role="2Ry0An">
-                      <property role="2Ry0Am" value="kotlinx-serialization-json-jvm-1.3.2.jar" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJt2" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib-jdk7.jar" />
                     </node>
                   </node>
                 </node>
@@ -300,17 +300,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1oqSG6gRUeG" role="3bR37C">
-          <node concept="1BurEX" id="1oqSG6gRUeH" role="1SiIV1">
-            <node concept="55IIr" id="1oqSG6gRUeB" role="1BurEY">
-              <node concept="2Ry0Ak" id="1oqSG6gRUeC" role="iGT6I">
+        <node concept="1SiIV0" id="7XcypZKMJta" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJtb" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJt5" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJt6" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1oqSG6gRUeD" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7XcypZKMJt7" role="2Ry0An">
                   <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
-                  <node concept="2Ry0Ak" id="1oqSG6gRUeE" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7XcypZKMJt8" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1oqSG6gRUeF" role="2Ry0An">
-                      <property role="2Ry0Am" value="model-server-0.1.jar" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJt9" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib-jdk8.jar" />
                     </node>
                   </node>
                 </node>
@@ -318,17 +318,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3Ee6YcFnqui" role="3bR37C">
-          <node concept="1BurEX" id="3Ee6YcFnquj" role="1SiIV1">
-            <node concept="55IIr" id="3Ee6YcFnqud" role="1BurEY">
-              <node concept="2Ry0Ak" id="3Ee6YcFnque" role="iGT6I">
+        <node concept="1SiIV0" id="7XcypZKMJth" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJti" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJtc" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJtd" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3Ee6YcFnquf" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7XcypZKMJte" role="2Ry0An">
                   <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
-                  <node concept="2Ry0Ak" id="3Ee6YcFnqug" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7XcypZKMJtf" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3Ee6YcFnquh" role="2Ry0An">
-                      <property role="2Ry0Am" value="model-api-jvm-1.0.jar" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJtg" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib.jar" />
                     </node>
                   </node>
                 </node>
@@ -336,17 +336,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3Ee6YcFnZCk" role="3bR37C">
-          <node concept="1BurEX" id="3Ee6YcFnZCl" role="1SiIV1">
-            <node concept="55IIr" id="3Ee6YcFnZCf" role="1BurEY">
-              <node concept="2Ry0Ak" id="3Ee6YcFnZCg" role="iGT6I">
+        <node concept="1SiIV0" id="7XcypZKMJto" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJtp" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJtj" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJtk" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3Ee6YcFnZCh" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7XcypZKMJtl" role="2Ry0An">
                   <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
-                  <node concept="2Ry0Ak" id="3Ee6YcFnZCi" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7XcypZKMJtm" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3Ee6YcFnZCj" role="2Ry0An">
-                      <property role="2Ry0Am" value="kotlin-stdlib-jdk7-1.6.20.jar" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJtn" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlinx-serialization-core-jvm.jar" />
                     </node>
                   </node>
                 </node>
@@ -354,17 +354,53 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3Ee6YcFnZCw" role="3bR37C">
-          <node concept="1BurEX" id="3Ee6YcFnZCx" role="1SiIV1">
-            <node concept="55IIr" id="3Ee6YcFnZCr" role="1BurEY">
-              <node concept="2Ry0Ak" id="3Ee6YcFnZCs" role="iGT6I">
+        <node concept="1SiIV0" id="7XcypZKMJtv" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJtw" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJtq" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJtr" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3Ee6YcFnZCt" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7XcypZKMJts" role="2Ry0An">
                   <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
-                  <node concept="2Ry0Ak" id="3Ee6YcFnZCu" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7XcypZKMJtt" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3Ee6YcFnZCv" role="2Ry0An">
-                      <property role="2Ry0Am" value="kotlin-stdlib-jdk8-1.6.20.jar" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJtu" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlinx-serialization-json-jvm.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7XcypZKMJtA" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJtB" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJtx" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJty" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7XcypZKMJtz" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
+                  <node concept="2Ry0Ak" id="7XcypZKMJt$" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJt_" role="2Ry0An">
+                      <property role="2Ry0Am" value="model-api-jvm.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7XcypZKMJtH" role="3bR37C">
+          <node concept="1BurEX" id="7XcypZKMJtI" role="1SiIV1">
+            <node concept="55IIr" id="7XcypZKMJtC" role="1BurEY">
+              <node concept="2Ry0Ak" id="7XcypZKMJtD" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7XcypZKMJtE" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.modelix.mps.rest.model.acess.plugin" />
+                  <node concept="2Ry0Ak" id="7XcypZKMJtF" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7XcypZKMJtG" role="2Ry0An">
+                      <property role="2Ry0Am" value="model-server.jar" />
                     </node>
                   </node>
                 </node>
