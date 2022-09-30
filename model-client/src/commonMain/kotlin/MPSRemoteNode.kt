@@ -1,9 +1,5 @@
-import org.modelix.model.api.IConcept
-import org.modelix.model.api.IConceptReference
-import org.modelix.model.api.INode
-import org.modelix.model.api.INodeReference
+import org.modelix.model.api.*
 import org.modelix.model.area.IArea
-import org.modelix.model.lazy.IConceptReferenceSerializer
 
 class MPSRemoteNode(
     val parentArea: MPSRemoteModelArea,
@@ -18,7 +14,7 @@ class MPSRemoteNode(
     override val allChildren: Iterable<INode>
         get() = children.flatMap { it.value }
     override val concept: IConcept
-        get() = IConceptReferenceSerializer.deserialize(conceptId, null)!!
+        get() = ILanguageRepository.resolveConcept(ConceptReference(conceptId))
     override val isValid: Boolean
         get() = true
     override val parent: INode?

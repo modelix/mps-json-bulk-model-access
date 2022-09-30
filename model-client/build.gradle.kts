@@ -16,6 +16,7 @@ val user = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAM
 val key = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
 
 repositories {
+    maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps") }
     maven {
         name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/modelix/model-api")
@@ -54,8 +55,8 @@ kotlin {
             dependencies {
                 implementation("io.ktor:ktor-client-core:$ktor_version")
                 implementation(project(":model-api"))
-                implementation("org.modelix:model-api:1.0.2")
-                implementation("org.modelix:model-client:2021.2.103")
+                implementation("org.modelix:model-api:1.3.1")
+                implementation("org.modelix:model-client:1.3.1")
                 implementation("io.ktor:ktor-client-serialization:$ktor_version")
             }
         }
