@@ -56,7 +56,7 @@ kotlin {
                 implementation("io.ktor:ktor-client-core:$ktor_version")
                 implementation(project(":model-api"))
                 implementation("org.modelix:model-api:1.3.1")
-                implementation("org.modelix:model-client:1.3.1")
+                implementation("org.modelix:model-client:1.3.2")
                 implementation("io.ktor:ktor-client-serialization:$ktor_version")
             }
         }
