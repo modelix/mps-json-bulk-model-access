@@ -24,7 +24,6 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-       
 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.2.2
@@ -36,5 +35,5 @@ jobs:
       with:
         arguments: mps-plugin:publishMps-pluginPublicationToGitHubPackagesRepository
       env:
-        USERNAME: ${{ github.actor }}
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ github.actor }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

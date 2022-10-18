@@ -9,7 +9,6 @@ name: Build mps plugin
 
 on:
   push:
-  
 
 jobs:
   build:

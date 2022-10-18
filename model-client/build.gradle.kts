@@ -12,8 +12,9 @@ version = "1.3"
 
 val ktor_version : String by project
 
-val user = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-val key = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+val githubUser: String = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
+val githubToken: String = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+
 
 repositories {
     maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps") }
@@ -21,16 +22,16 @@ repositories {
         name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/modelix/model-api")
         credentials {
-            username = user
-            password = key
+            username = githubUser
+            password = githubToken
         }
     }
     maven {
         name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/modelix/modelix")
         credentials {
-            username = user
-            password = key
+            username = githubUser
+            password = githubToken
         }
     }
     mavenCentral()
@@ -79,8 +80,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/modelix/mps-rest-model-access")
             credentials {
-                username = user
-                password = key
+                username = githubUser
+                password = githubToken
             }
         }
     }
