@@ -36,7 +36,7 @@ class MPSRemoteModelArea(model : Model, val client : MPSRemoteClient): AbstractA
                 client.resolveReference(ref)
             }
         }
-        return null;
+        return null
     }
 }
 

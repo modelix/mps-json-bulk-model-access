@@ -78,8 +78,8 @@ class MPSRemoteNode(
 }
 
 class MPSRemoteNodeReference : INodeReference {
-    val modelId: String
-    val nodeId: String
+    val modelId : String
+    val nodeId : String
 
     constructor(modelId: String, nodeId: String) {
         this.modelId = modelId
@@ -105,7 +105,7 @@ class MPSRemoteNodeReference : INodeReference {
     }
 
     override fun resolveNode(area: IArea?): INode? {
-        return area?.resolveNode(this);
+        return area?.resolveNode(this)
     }
 
     override fun hashCode(): Int {
