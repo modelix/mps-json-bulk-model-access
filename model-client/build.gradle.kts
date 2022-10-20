@@ -18,26 +18,7 @@ val githubToken: String = project.findProperty("gpr.key") as String? ?: System.g
 
 repositories {
     maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps") }
-    maven {
-        name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/modelix/model-api")
-        credentials {
-            username = githubUser
-            password = githubToken
-        }
-    }
-    maven {
-        name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/modelix/modelix")
-        credentials {
-            username = githubUser
-            password = githubToken
-        }
-    }
     mavenCentral()
-    maven {
-        url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr")
-    }
 }
 
 
