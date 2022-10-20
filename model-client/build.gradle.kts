@@ -7,21 +7,10 @@ plugins {
     `java-library`
 }
 
-group = "org.modelix.mps-rest-model-access"
-version = "1.3"
-
 val ktor_version : String by project
 
 val githubUser: String = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
 val githubToken: String = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
-
-
-repositories {
-    maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps") }
-    mavenCentral()
-}
-
-
 
 kotlin {
     jvm() {
@@ -63,6 +52,19 @@ publishing {
             credentials {
                 username = githubUser
                 password = githubToken
+            }
+        }
+        if (project.hasProperty("artifacts.itemis.cloud.user")) {
+            maven {
+                name = "itemis"
+                url = if (version.toString().contains("SNAPSHOT"))
+                    uri("https://artifacts.itemis.cloud/repository/maven-mps-snapshots/")
+                else
+                    uri("https://artifacts.itemis.cloud/repository/maven-mps-releases/")
+                credentials {
+                    username = project.findProperty("artifacts.itemis.cloud.user").toString()
+                    password = project.findProperty("artifacts.itemis.cloud.pw").toString()
+                }
             }
         }
     }

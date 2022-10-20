@@ -13,14 +13,6 @@ plugins {
     `maven-publish`
 }
 
-group = "org.modelix.mps-rest-model-access"
-version = "1.4"
-
-repositories {
-    mavenCentral()
-    maven { url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr") }
-}
-
 val server by configurations.creating
 val mps by configurations.creating
 val buildDependencies by configurations.creating
@@ -87,6 +79,19 @@ publishing {
             credentials {
                 username = project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR")
                 password = project.findProperty("gpr.key") as? String ?: System.getenv("GITHUB_TOKEN")
+            }
+        }
+        if (project.hasProperty("artifacts.itemis.cloud.user")) {
+            maven {
+                name = "itemis"
+                url = if (version.toString().contains("SNAPSHOT"))
+                    uri("https://artifacts.itemis.cloud/repository/maven-mps-snapshots/")
+                else
+                    uri("https://artifacts.itemis.cloud/repository/maven-mps-releases/")
+                credentials {
+                    username = project.findProperty("artifacts.itemis.cloud.user").toString()
+                    password = project.findProperty("artifacts.itemis.cloud.pw").toString()
+                }
             }
         }
     }

@@ -7,7 +7,10 @@
 
 name: Publish api
 
-on: [workflow_dispatch]
+on:
+  push:
+    tags:
+      - '**'
 
 jobs:
   build:
@@ -33,7 +36,7 @@ jobs:
     - name: Publish to GitHub Packages
       uses: gradle/gradle-build-action@v2.2.2
       with:
-        arguments: model-api:publishAllPublicationsToGitHubPackagesRepository
+        arguments: model-api:publish -PciBuild=true -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
       env:
         GITHUB_ACTOR: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
