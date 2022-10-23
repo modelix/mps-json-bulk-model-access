@@ -8,6 +8,7 @@ plugins {
 }
 
 val ktor_version : String by project
+val modelixCoreVersion : String by project
 
 val githubUser: String = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
 val githubToken: String = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
@@ -26,8 +27,8 @@ kotlin {
             dependencies {
                 implementation("io.ktor:ktor-client-core:$ktor_version")
                 implementation(project(":model-api"))
-                implementation("org.modelix:model-api:1.3.1")
-                implementation("org.modelix:model-client:1.3.1")
+                implementation("org.modelix:model-api:$modelixCoreVersion")
+                implementation("org.modelix:model-client:$modelixCoreVersion")
                 implementation("io.ktor:ktor-client-serialization:$ktor_version")
             }
         }
