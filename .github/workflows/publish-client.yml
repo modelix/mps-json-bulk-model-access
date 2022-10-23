@@ -12,6 +12,10 @@ on:
     tags:
       - '**'
 
+env:
+  GITHUB_ACTOR: ${{ github.actor }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   build:
 
@@ -37,6 +41,3 @@ jobs:
       uses: gradle/gradle-build-action@v2.2.2
       with:
         arguments: model-client:publish -PciBuild=true -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
-      env:
-        GITHUB_ACTOR: ${{ github.actor }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
