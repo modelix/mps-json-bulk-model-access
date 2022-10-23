@@ -31,19 +31,19 @@ Once the initial build has completes feel free to open the project using Intelli
 
 This repository contains a multiplatform gradle build with several subprojects. Consequently it publishes several artifacts. These subprojects and artifacts are:
 
-* `model-api` 1.0 (5 months ago, ex 0.1; joao)
+* `model-api`
     * artifacts:
         * `model-api`
         * `model-api-js`
         * `model-api-jvm`
-* `model-client` 1.3 (3 months ago, mulitple versoins kolja)
+* `model-client`
     * artifacts:
         * `model-client`
         * `model-client-jvm`
-* `mps-plugin` 1.4 (3 months ago, multiple versions; )
+* `mps-plugin`
     * artifacts:
         * `mps-plugin`
-* `model-server` 0.2
+* `model-server`
     * artifacts:
         * `-` (used by the other subprojects and not exposed or published directly)
 
