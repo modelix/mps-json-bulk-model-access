@@ -1,13 +1,15 @@
-# MPS rest model access api
+# MPS JSON bulk model access
 
 This is a modelix model-api ([modelix model-api](https://github.com/modelix/model-api)) implementation that works against a remote MPS instance model without incremental change support.
 
-(If you somehow ended up here but don't know what modelix is, have a look at modelix [github repository](https://github.com/modelix/modelix) or at [modelix website](https://modelix.github.io).)
+(legacy name and group of artifacts was `org.modelix.mps-rest-model-access` which was changed with the 2.0 release to `org.modelix.mps-json-bulk-model-access`)
+
+If you somehow ended up here but don't know what modelix is, have a look at modelix [github repository](https://github.com/modelix/modelix) or at [modelix website](https://modelix.github.io).
 
 
 ## Getting Started
 
-At the moment most modelix artifacts are stored on the [itemis nexus](https://artifacts.itemis.cloud) (https://artifacts.itemis.cloud). Some artifacts are also published to GitHub packages.
+At the moment most modelix artifacts are stored on the [itemis nexus](https://artifacts.itemis.cloud). Some artifacts are also published to GitHub packages.
 
 You can build all the project via gradle:
 

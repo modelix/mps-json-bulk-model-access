@@ -4,7 +4,7 @@ plugins {
      id("com.palantir.git-version") version "0.13.0"
 }
 
-group = "org.modelix.mps-rest-model-access"
+group = "org.modelix.mps-json-bulk-model-access"
 version = computeVersion()
 
 println("Version: $version")
