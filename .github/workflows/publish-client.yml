@@ -33,11 +33,11 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@v2.2.2
+      uses: gradle/gradle-build-action@v2.3.3
       with:
         arguments: model-client:build
 
     - name: Publish to GitHub Packages
-      uses: gradle/gradle-build-action@v2.2.2
+      uses: gradle/gradle-build-action@v2.3.3
       with:
         arguments: model-client:publish -PciBuild=true -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
