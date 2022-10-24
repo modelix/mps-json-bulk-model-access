@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform") version "1.7.10" apply false
-    kotlin("plugin.serialization") version "1.7.10" apply false
+    kotlin("plugin.serialization") version "1.7.20" apply false
      id("com.palantir.git-version") version "0.13.0"
 }
 
