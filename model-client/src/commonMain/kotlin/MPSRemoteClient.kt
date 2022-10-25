@@ -1,7 +1,8 @@
 import io.ktor.client.*
 import io.ktor.client.call.*
-import io.ktor.client.features.*
-import io.ktor.client.features.json.*
+import io.ktor.client.plugins.*
+import io.ktor.client.plugins.contentnegotiation.*
+import io.ktor.serialization.kotlinx.json.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
@@ -18,11 +19,10 @@ class MPSRemoteClient(val host: String, val port: Int) {
     private fun client(): HttpClient {
         return HttpClient {
             defaultRequest {
-                method = HttpMethod.Get
                 host = this@MPSRemoteClient.host
                 port = this@MPSRemoteClient.port
             }
-            install(JsonFeature)
+            install(ContentNegotiation) { json()}
         }
     }
 
@@ -36,10 +36,10 @@ class MPSRemoteClient(val host: String, val port: Int) {
 
             when (response.status) {
                 HttpStatusCode.OK -> {
-                    return response.receive()
+                    return response.body()
                 }
                 else -> {
-                    throw MPSRemoteClientException("Something failed when loading models view", response.status.value ,response.readText())
+                    throw MPSRemoteClientException("Something failed when loading models view", response.status.value, response.bodyAsText())
                 }
             }
         }
@@ -61,12 +61,12 @@ class MPSRemoteClient(val host: String, val port: Int) {
                         throw ModelNotFoundException(id)
                     }
                     else -> {
-                        throw MPSRemoteClientException("Something failed when loading model '$id'", response.status.value ,response.readText())
+                        throw MPSRemoteClientException("Something failed when loading model '$id'", response.status.value, response.bodyAsText())
                     }
                 }
             }
 
-            MPSRemoteModelArea(response.receive(), this)
+            MPSRemoteModelArea(response.body(), this)
         }
 
         client.close()
@@ -86,13 +86,13 @@ class MPSRemoteClient(val host: String, val port: Int) {
 
             when (response.status) {
                 HttpStatusCode.OK -> {
-                    areas[modelId] = MPSRemoteModelArea(response.receive(), this)
+                    areas[modelId] = MPSRemoteModelArea(response.body(), this)
                 }
                 HttpStatusCode.NotFound -> {
                     throw ModelNotFoundException(modelId)
                 }
                 else -> {
-                    throw MPSRemoteClientException("Something failed when loading model '$modelId'", response.status.value ,response.readText())
+                    throw MPSRemoteClientException("Something failed when loading model '$modelId'", response.status.value, response.bodyAsText())
                 }
             }
         }

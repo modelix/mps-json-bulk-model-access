@@ -26,10 +26,13 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-core:$ktor_version")
+                implementation("io.ktor:ktor-client-serialization:$ktor_version")
+                implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+
                 implementation(project(":model-api"))
                 implementation("org.modelix:model-api:$modelixCoreVersion")
                 implementation("org.modelix:model-client:$modelixCoreVersion")
-                implementation("io.ktor:ktor-client-serialization:$ktor_version")
             }
         }
 
