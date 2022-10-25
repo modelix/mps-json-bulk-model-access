@@ -2,9 +2,20 @@
 
 This is a modelix model-api ([modelix model-api](https://github.com/modelix/model-api)) implementation that works against a remote MPS instance model without incremental change support.
 
-⚠️  Warning: this component was previously named `org.modelix.mps-rest-model-access` which was changed with the 2.0 release to `org.modelix.mps-json-bulk-model-access`). Additionally with version 2.0 of this component the ktor dependency was bumped from `1.6.x` to `2.0.3`. ⚠️
-
 If you somehow ended up here but don't know what modelix is, have a look at modelix [github repository](https://github.com/modelix/modelix) or at [modelix website](https://modelix.github.io).
+
+
+## Component Rename
+
+⚠️ Warning: With the release of version `2.0` this component was renamed from
+
+    org.modelix.mps-rest-model-access
+    
+to 
+
+    org.modelix.mps-json-bulk-model-access
+    
+Additionally with version `2.0` of this component the `ktor` dependency was bumped from `1.6.x` to `2.0.3` 
 
 
 ## Getting Started
