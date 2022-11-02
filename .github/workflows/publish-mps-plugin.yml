@@ -40,4 +40,4 @@ jobs:
     - name: Publish to GitHub Packages
       uses: gradle/gradle-build-action@v2.3.3
       with:
-        arguments: mps-plugin:publishMps-pluginPublicationToGitHubPackagesRepository -PciBuild=true -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
+        arguments: mps-plugin:publishMps-pluginPublicationToItemisRepository mps-plugin:publishMps-pluginPublicationToGitHubPackagesRepository -PciBuild=true -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
