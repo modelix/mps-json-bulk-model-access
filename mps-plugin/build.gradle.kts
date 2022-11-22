@@ -46,7 +46,7 @@ val copyServer = tasks.create<Sync>("copyServer"){
             "${ra.name}.${ra.extension}"
         }
     }
-    into("$projectDir/solutions/org.modelix.mps.rest.model.acess.plugin/lib")
+    into("$projectDir/solutions/org.modelix.mps.json.bulk.model.access.plugin/lib")
 }
 
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildDependencies.fileCollection { true }
