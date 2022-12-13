@@ -11,7 +11,7 @@ val mps_version: String by project
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(project(":model-api"))
-    compileOnly("io.netty:netty-all:4.1.85.Final")
+    compileOnly("io.netty:netty-all:4.1.86.Final")
     mps("com.jetbrains:mps:$mps_version")
     compileOnly("com.jetbrains:mps-openapi:$mps_version")
     compileOnly("com.jetbrains:mps-core:$mps_version")
