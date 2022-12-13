@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.modelix.mps.rest.model.acess.plugin" uuid="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="org.modelix.mps.json.bulk.model.access.plugin" uuid="3257c0a0-131a-49aa-b7eb-4ec72ed06b33" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -64,8 +64,9 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
+    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="306183fb-952a-4095-9ca0-a4b846e2036e(org.modelix.modelcheck.mps.plugin)" version="0" />
-    <module reference="3257c0a0-131a-49aa-b7eb-4ec72ed06b33(org.modelix.mps.rest.model.acess.plugin)" version="0" />
+    <module reference="3257c0a0-131a-49aa-b7eb-4ec72ed06b33(org.modelix.mps.json.bulk.model.access.plugin)" version="0" />
   </dependencyVersions>
 </solution>
 

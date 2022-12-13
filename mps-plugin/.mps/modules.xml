@@ -2,8 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.rest.model.access.plugin.build/org.modelix.mps.rest.model.access.plugin.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.rest.model.acess.plugin/org.modelix.mps.rest.model.acess.plugin.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.json.bulk.model.access.plugin.build/org.modelix.mps.json.bulk.model.access.plugin.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.json.bulk.model.access.plugin/org.modelix.mps.json.bulk.model.access.plugin.msd" folder="" />
     </projectModules>
   </component>
 </project>
