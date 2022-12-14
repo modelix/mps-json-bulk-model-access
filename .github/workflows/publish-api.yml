@@ -31,7 +31,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-
+    - name: Use tag as version
+      run: echo "${GITHUB_REF#refs/*/}" > version.txt
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.3.3
       with:
