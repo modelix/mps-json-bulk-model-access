@@ -14,7 +14,7 @@ class MPSRemoteNode(
     override val allChildren: Iterable<INode>
         get() = children.flatMap { it.value }
     override val concept: IConcept
-        get() = ILanguageRepository.resolveConcept(ConceptReference(conceptId))
+        get() = ILanguageRepository.resolveConcept(getConceptReference())
     override val isValid: Boolean
         get() = true
     override val parent: INode?
@@ -46,7 +46,7 @@ class MPSRemoteNode(
         }
     }
 
-    override fun getConceptReference() = concept.getReference()
+    override fun getConceptReference() = ConceptReference(conceptId)
 
     override fun getArea(): IArea = parentArea
 
