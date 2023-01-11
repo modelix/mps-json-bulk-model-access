@@ -1,5 +1,5 @@
 import org.modelix.model.api.INodeReference
-import org.modelix.model.lazy.INodeReferenceSerializer
+import org.modelix.model.api.INodeReferenceSerializer
 
 class ReferenceSerializer {
     companion object : INodeReferenceSerializer {

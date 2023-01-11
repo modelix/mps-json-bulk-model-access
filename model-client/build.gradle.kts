@@ -32,7 +32,6 @@ kotlin {
 
                 implementation(project(":model-api"))
                 implementation("org.modelix:model-api:$modelixCoreVersion")
-                implementation("org.modelix:model-client:$modelixCoreVersion")
             }
         }
 
