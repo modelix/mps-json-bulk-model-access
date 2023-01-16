@@ -21,7 +21,7 @@ val mps_version : String by project
 dependencies{
     mps("com.jetbrains:mps:$mps_version")
     server(project(":model-server"))
-    buildDependencies("org.apache.ant:ant-junit:1.10.12")
+    buildDependencies("org.apache.ant:ant-junit:1.10.13")
 }
 
 val mpsDir = File(buildDir,"mps")
