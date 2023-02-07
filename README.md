@@ -1,3 +1,8 @@
+⚠ This component will soon™ be replaced by a new MPS plgin for bulk model access ⚠ 
+
+
+
+
 # MPS JSON bulk model access
 
 This is a modelix model-api ([modelix model-api](https://github.com/modelix/model-api)) implementation that works against a remote MPS instance model without incremental change support.
