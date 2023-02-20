@@ -34,11 +34,11 @@ jobs:
     - name: Use tag as version
       run: echo "${GITHUB_REF#refs/*/}" > version.txt
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@v2.3.3
+      uses: gradle/gradle-build-action@v2.4.0
       with:
         arguments: mps-plugin:build
 
     - name: Publish to GitHub Packages
-      uses: gradle/gradle-build-action@v2.3.3
+      uses: gradle/gradle-build-action@v2.4.0
       with:
         arguments: mps-plugin:publishMps-pluginPublicationToItemisRepository mps-plugin:publishMps-pluginPublicationToGitHubPackagesRepository -PciBuild=true -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
