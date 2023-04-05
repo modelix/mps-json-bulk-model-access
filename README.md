@@ -1,5 +1,13 @@
-⚠ This component will soon™ be replaced by a new MPS plgin for bulk model access ⚠ 
+⚠ THIS COMPONENT WAS REPLACED BY ANOTHER MODELIX COMPONENT ⚠
 
+The new modelix `model-client` replaces this component.
+It will no longer require MPS plugins to access model content - you can obtain model knowledge directly from a `model-server` or an MPS instance with our modelix plugin.
+
+For more information check the component documentation or sources at:
+
+https://docs.modelix.org/modelix/latest/core/howto/usage-light-model-client.html
+
+https://github.com/modelix/modelix.core
 
 
 
